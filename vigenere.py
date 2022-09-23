@@ -76,21 +76,10 @@ def key_guesser(samp_one: str, samp_two: str):
 
 
 if __name__ == '__main__':
-    # sample1 = Cipher(CipherType.vigenere, cipher_text='RKIG MHWJ VBTR SLUX EEKU JLBI')
-    # sample2 = Cipher(CipherType.vigenere, cipher_text='UCOY UJDX CDWP YYVZ SWTZ YGRD')
-    # key_guesser(sample1, sample2)
-
-    # attack = Cipher(CipherType.vigenere, cipher_key='Lemon', plain_text='Attack At Dawn')
-    # print(vigenere(attack))
-
-    # plain_text = 'ATTACKATDAWN'
-    # key1 =       'AKSNFUJSNKSQ'
-    # key2 =       'KSNFUJSNKSQZ'
-    # cipher1 = Cipher(CipherType.vigenere, cipher_key=key1, plain_text=plain_text)
-    # cipher2 = Cipher(CipherType.vigenere, cipher_key=key2, plain_text=plain_text)
-    # print(vigenere(cipher1))
-    # print(vigenere(cipher2))
-
     sample1 = 'ADLNHEJLQKOD'
     sample2 = 'KLGFWTSGNSMM'
     key_guesser(sample1, sample2)
+    
+    attack = Cipher(CipherType.vigenere, cipher_key='Lemon', plain_text='Attack At Dawn')
+    print(vigenere(attack))
+    
